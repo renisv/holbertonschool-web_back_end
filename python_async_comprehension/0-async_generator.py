@@ -1,19 +1,14 @@
 #!/usr/bin/env python3
-"""
-Async generator coroutine that yields 10 random numbers asynchronously with a delay.
-"""
-
+"""Async Generator module"""
 import asyncio
 import random
 
+
 async def async_generator():
     """
-    Asynchronously generates 10 random numbers between 0 and 10 (float).
-    Each number is yielded after an asynchronous 1 second delay.
-
-    Yields:
-        float: A random floating point number between 0 and 10.
+    Coroutine that loops 10 times, asynchronously waits 1 second,
+    then yields a random number between 0 and 10.
     """
     for _ in range(10):
         await asyncio.sleep(1)
-        yield random.uniform(0, 10)
+        yield random.random() * 10
