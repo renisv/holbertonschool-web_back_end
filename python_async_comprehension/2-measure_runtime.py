@@ -1,19 +1,15 @@
 #!/usr/bin/env python3
-'''
-Python - Async Comprehension
-'''
+"""Async Generator module."""
 import asyncio
-import time
+import random
+from typing import Generator
 
 
-async_comprehension = __import__('1-async_comprehension').async_comprehension
-
-
-async def measure_runtime() -> float:
-    '''
-    should measure the total runtime and return it
-    '''
-    start = time.time()
-    await asyncio.gather(*(async_comprehension() for _ in range(4)))
-    end = time.time()
-    return end - start
+async def async_generator() -> Generator[float, None, None]:
+    """
+    Coroutine that loops 10 times, asynchronously waits 1 second,
+    then yields a random number between 0 and 10.
+    """
+    for _ in range(10):
+        await asyncio.sleep(1)
+        yield random.random() * 10
