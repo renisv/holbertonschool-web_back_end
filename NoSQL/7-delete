@@ -1,2 +1,2 @@
-Delete all documents in school collection with name "Holberton school"
-db.school.delete_many({"name": "Holberton school"})
+// Delete all documents in school collection with name "Holberton school"
+db.school.deleteMany({ name: "Holberton school" })
