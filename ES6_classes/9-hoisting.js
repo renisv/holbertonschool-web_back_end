@@ -1,4 +1,5 @@
 export class HolbertonClass {
+<<<<<<< HEAD
   constructor(year, location) {
       this._year = year;
       this._location = location;
@@ -31,6 +32,40 @@ export class StudentHolberton {
   get fullStudentDescription() {
       return `${this._firstName} ${this._lastName} - ${this._holbertonClass.year} - ${this._holbertonClass.location}`;
   }
+=======
+    constructor(year, location) {
+        this._year = year;
+        this._location = location;
+    }
+
+    get year() {
+        return this._year;
+    }
+
+    get location() {
+        return this._location;
+    }
+}
+
+export class StudentHolberton {
+    constructor(firstName, lastName, holbertonClass) {
+        this._firstName = firstName;
+        this._lastName = lastName;
+        this._holbertonClass = holbertonClass;
+    }
+
+    get fullName() {
+        return `${this._firstName} ${this._lastName}`;
+    }
+
+    get holbertonClass() {
+        return this._holbertonClass;
+    }
+
+    get fullStudentDescription() {
+        return `${this._firstName} ${this._lastName} - ${this._holbertonClass.year} - ${this._holbertonClass.location}`;
+    }
+>>>>>>> upstream/main
 }
 
 const class2019 = new HolbertonClass(2019, 'San Francisco');

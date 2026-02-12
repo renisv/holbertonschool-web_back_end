@@ -1,2 +1,6 @@
 // Delete all documents in school collection with name "Holberton school"
+<<<<<<< HEAD
 db.school.deleteMany({ name: "Holberton school" })
+=======
+db.school.deleteMany({ name: "Holberton school" })
+>>>>>>> upstream/main

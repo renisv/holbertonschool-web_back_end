@@ -5,4 +5,8 @@ export default function handleResponseFromAPI(promise) {
       return { status: 200, body: 'success' };
     })
     .catch(() => new Error());
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> upstream/main

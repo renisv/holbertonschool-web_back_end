@@ -1,2 +1,6 @@
 // List all documents in school collection with name "Holberton school"
+<<<<<<< HEAD
 db.school.find({ name: "Holberton school" })
+=======
+db.school.find({ name: "Holberton school" })
+>>>>>>> upstream/main

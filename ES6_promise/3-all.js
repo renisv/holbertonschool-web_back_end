@@ -8,4 +8,8 @@ export default function handleProfileSignup() {
     .catch(() => {
       console.log('Signup system offline');
     });
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> upstream/main

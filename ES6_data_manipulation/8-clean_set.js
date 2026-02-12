@@ -12,4 +12,8 @@ export default function cleanSet(set, startString) {
   });
 
   return result.join('-');
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> upstream/main

@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 // Switch to (or create) the database my_db
 use my_db
+=======
+// Switch to (or create) the database my_db
+use my_db
+>>>>>>> upstream/main

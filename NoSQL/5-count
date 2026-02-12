@@ -1,2 +1,6 @@
 // Display the number of documents in the school collection
+<<<<<<< HEAD
 print(db.school.count())
+=======
+print(db.school.count())
+>>>>>>> upstream/main

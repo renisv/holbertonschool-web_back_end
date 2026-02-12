@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 // Lists all databases in MongoDB
 show dbs
+=======
+// Lists all databases in MongoDB
+show dbs
+>>>>>>> upstream/main
